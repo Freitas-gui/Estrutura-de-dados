@@ -5,7 +5,6 @@ typedef struct no{
     int chave;
     struct no *prox;
 }no;
-//ashiahsias
 
 no *cria(int chave){
     no *novo=(no*)malloc(sizeof(no));
