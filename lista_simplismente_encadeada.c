@@ -150,3 +150,12 @@ int ComparaTamPalavra(no *L,no* L2){
     //retorna 1,0,-1
     return resultado;
 }
+no *InverteOrdem(no *L){
+    no *aux=L,*L2=NULL,*novo;
+    while(aux!=NULL){
+        novo=cria(aux->chave);
+        L2=InsereInicio(L2,novo);
+        aux=aux->prox;
+    }
+    return L2;
+}
