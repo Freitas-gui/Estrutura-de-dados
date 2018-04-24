@@ -78,7 +78,8 @@ no *RemoveNOrdenado(no *L,int chave){
             aux=aux->prox;
         }
         if(ant==NULL) L=NULL;
-        else if(aux!=NULL) ant->prox=aux->prox;
+        else if(aux!=NULL)
+            ant->prox=aux->prox;
         free(aux);
     }
     return L;
@@ -116,7 +117,7 @@ char *ListaEmPalavra(no *L){
             aux=aux->prox;
         }
     }
-    if(aux==NULL){
+    else{
         palavra=(char*)realloc(palavra,sizeof(char)*i);
         palavra[i]='\0';
     }
