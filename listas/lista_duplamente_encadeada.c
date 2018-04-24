@@ -85,8 +85,11 @@ no *insere_ordenado(no *L,no *novo){
         L=novo;
     }
     else if(aux->prox==NULL&&aux->chave<novo->chave){
+        novo->prox=aux->prox;
+        aux->prox->ant=novo;
         novo->ant=aux;
         aux->prox=novo;
+
     }
     else {
         novo->ant=aux->ant;
