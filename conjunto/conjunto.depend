@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1526678507 source:c:\users\cb\desktop\conjunto\main.c
+	"conjunto.h"
+
+1526592120 c:\users\cb\desktop\conjunto\conjunto.h
+	<stdio.h>
+	<stdlib.h>
+
+1526679009 source:c:\users\cb\desktop\conjunto\conjunto.c
+	"conjunto.h"
+
